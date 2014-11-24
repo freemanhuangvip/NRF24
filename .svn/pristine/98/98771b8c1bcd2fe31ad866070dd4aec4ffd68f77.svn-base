@@ -1,0 +1,408 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_third_shopping"
+    android:descendantFocusability="afterDescendants"
+    android:background="@drawable/rect_gradient_blue" >
+
+    <include layout="@layout/layout_title" />
+    
+    <RelativeLayout
+        android:id="@+id/layout_taobao"
+        android:layout_width="391dp"
+        android:layout_height="305dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/image_taobao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/video_on_demand_text"
+            android:nextFocusLeft="@id/wonderful_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/taobao" />
+        
+       
+        <TextView
+            android:id="@+id/daily_necessities_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_daily_necessities"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+         
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/layout_food"
+        android:layout_width="193dp"
+        android:layout_height="305dp"
+        android:layout_marginLeft="441dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/video_on_demand_text"
+            android:nextFocusLeft="@id/wonderful_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/taobao" />
+        
+        <TextView
+            android:id="@+id/food_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_food"
+            android:textColor="@color/white"
+            android:textSize="25sp"  />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/layout_clothes"
+        android:layout_width="193dp"
+        android:layout_height="305dp"
+        android:layout_marginLeft="639dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_clothes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/video_on_demand_text"
+            android:nextFocusLeft="@id/wonderful_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/taobao" />
+
+        <TextView
+            android:id="@+id/clothes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_clothes"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/layout_fresh"
+        android:layout_width="193dp"
+        android:layout_height="305dp"
+        android:layout_marginLeft="837dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_fresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/video_on_demand_text"
+            android:nextFocusLeft="@id/wonderful_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/taobao" />
+
+        <TextView
+            android:id="@+id/fresh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_fresh"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_wine"
+        android:layout_width="193dp"
+        android:layout_height="305dp"
+        android:layout_marginLeft="1035dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_wine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/video_on_demand_text"
+            android:nextFocusLeft="@id/wonderful_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/taobao" />
+        
+        <TextView
+            android:id="@+id/wine_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_wine"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/layout_recharge"
+        android:layout_width="193dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="243dp"
+        android:layout_marginTop="460dp"    
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/image_recharge"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/dangdang" />
+
+        <!-- 
+        <TextView
+            android:id="@+id/vod_infomationtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_infomation"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+        -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_payment"
+        android:layout_width="193dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="460dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_payment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/video_on_demand_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/dangdang" />
+        <!--  
+        <TextView
+            android:id="@+id/vod_sporttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_sport"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+            -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_dangdang"
+        android:layout_width="193dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="837dp"
+        android:layout_marginTop="460dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_dangdang"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/dangdang" />
+        <!-- 
+        <TextView
+            android:id="@+id/vod_teleplaytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_teleplay"
+            android:textColor="@color/white"
+            android:textSize="28sp" /> 
+          -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_jd"
+        android:layout_width="193dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="441dp"
+        android:layout_marginTop="460dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_jd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/video_on_demand_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/dangdang" />
+
+        <TextView
+            android:id="@+id/vod_columntext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_column"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_suning"
+        android:layout_width="193dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="639dp"
+        android:layout_marginTop="460dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_suning"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/video_on_demand_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/dangdang" />
+
+        <TextView
+            android:id="@+id/vod_entertainmenttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_entertainment"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_nuomi"
+        android:layout_width="193dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="1035dp"
+        android:layout_marginTop="460dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_nuomi"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/video_on_demand_text"
+            android:nextFocusRight="@id/civil_for_aged_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/dangdang" />
+
+        <TextView
+            android:id="@+id/vod_childrentext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="160dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_children"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+</RelativeLayout>

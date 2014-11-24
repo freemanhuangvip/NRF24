@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">养老launcher</string>
+    <!--  -->
+    <string name="wonderful">精彩推荐</string>
+    <string name="video_on_demand">影视点播</string>
+    <string name="civil_for_aged">民政养老</string>
+    <string name="app_manage">应用管理</string>
+    <string name="str_system_setting">系统设置</string>
+    <string name="str_setting">设置</string>
+    <string name="str_life_service">生活服务</string>
+    <string name="str_app_shop">应用商店</string>
+    <!--  -->
+    <string name="str_room_service">送餐服务</string>
+    <string name="str_health_care">健康医疗</string>
+    <string name="str_surrounding_shopping">周边购物</string>
+    <string name="str_game_entertainment">游戏娱乐</string>
+    <string name="str_civil_window">民政窗口</string>
+    <string name="str_visual_communication">可视通话</string>
+    <string name="str_travel">旅游出行</string>
+    <!--  -->
+    <string name="str_movie">电影</string>
+    <string name="str_infomation">资讯</string>
+    <string name="str_sport">体育</string>
+    <string name="str_column">栏目</string>
+    <string name="str_teleplay">电视剧</string>
+    <string name="str_entertainment">娱乐</string>
+    <string name="str_children">少儿</string>
+    <!--  -->
+    <string name="str_media">影视</string>
+    <string name="str_shopping">购物</string>
+    <string name="str_music">音乐</string>
+    <string name="str_life">生活</string>
+    <string name="str_education">教育</string>
+    <string name="str_more">更多</string>
+
+    <!--  -->
+    <string name="str_lottery_query">彩票查询</string>
+    <string name="str_bus_line">公交线路</string>
+    <string name="str_common_telephone">常用电话</string>
+    <string name="str_train_query">火车票查询</string>
+    <string name="str_express_query">快递查询</string>
+    <string name="str_life_pay">生活缴费</string>
+    <string name="str_recharge">话费充值</string>
+    <string name="str_perpetual_calendar">万年历</string>
+    <!--  -->
+    <string name="str_network">网络</string>
+    <string name="str_about_us">关于我们</string>
+    <string name="str_display">显示</string>
+    <string name="str_install">安装</string>
+    <string name="str_download">下载</string>
+    <!--  -->
+    <string name="str_daily_necessities">日用品</string>
+    <string name="str_food">食品</string>
+    <string name="str_clothes">衣服</string>
+    <string name="str_fresh">生鲜</string>
+    <string name="str_wine">酒水</string>
+
+</resources>

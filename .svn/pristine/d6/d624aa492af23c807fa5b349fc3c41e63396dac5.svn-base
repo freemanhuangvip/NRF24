@@ -1,0 +1,127 @@
+package com.gotechcn.gallery3d;
+
+import android.content.Context;
+import android.graphics.Camera;
+import android.graphics.Matrix;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.View;
+import android.view.animation.Transformation;
+import android.widget.Gallery;
+import android.widget.ImageView;
+
+public class GalleryFlow extends Gallery {
+	// mCamera是用来做类3D效果处理，比如Z轴方向上的平移，绕Y轴的旋转等  
+    private Camera mCamera = new Camera();  
+    // mMaxRotationAngle是图片绕Y轴最大旋转角度，也就是屏幕最边上那两张图片的旋转角度  
+    private int mMaxRotationAngle = 50;  
+    // mMaxZoom是图片在Z轴平移的距离，视觉上看上进心来就是放大缩小的效果  
+    private int mMaxZoom = -200;  
+    private int mCoveflowCenter;  
+    private boolean mAlphaMode = true;  
+    
+    private final static String TAG="GalleryFlow";
+    
+    public GalleryFlow(Context context) {
+        super(context);
+//支持转换 ,执行getChildStaticTransformation方法
+        this.setStaticTransformationsEnabled(true);
+    }
+    public GalleryFlow(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        this.setStaticTransformationsEnabled(true);
+    }
+    public GalleryFlow(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+        this.setStaticTransformationsEnabled(true);
+    }
+    public int getMaxRotationAngle() {
+        return mMaxRotationAngle;
+    }
+    public void setMaxRotationAngle(int maxRotationAngle) {
+        mMaxRotationAngle = maxRotationAngle;
+    }
+   
+    public int getMaxZoom() {
+        return mMaxZoom;
+    }
+    public void setMaxZoom(int maxZoom) {
+        mMaxZoom = maxZoom;
+    }
+    private int getCenterOfCoverflow() {
+        return (getWidth() - getPaddingLeft() - getPaddingRight()) / 2
+                        + getPaddingLeft();
+    }
+    private static int getCenterOfView(View view) {
+        return view.getLeft() + view.getWidth() / 2;
+    }
+    
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        mCoveflowCenter = getCenterOfCoverflow();
+        super.onSizeChanged(w, h, oldw, oldh);
+    }
+    
+    @Override  
+    protected boolean getChildStaticTransformation(View child, Transformation t) {  
+        final int childCenter = getCenterOfView(child);  
+        final int childWidth = child.getWidth();  
+        int rotationAngle = 0;  
+        t.clear();  
+        
+        t.setTransformationType(Transformation.TYPE_MATRIX);  
+        if (childCenter == mCoveflowCenter) {  
+            transformImageBitmap(child, t, 0);  
+        } else {  
+        	  
+            rotationAngle = (int) (((float) (mCoveflowCenter - childCenter) / childWidth) * mMaxRotationAngle);  
+			transformImageBitmap(child, t, rotationAngle);
+        }  
+        return true;  
+    }  
+    
+    
+	private void transformImageBitmap(View child, Transformation t,int rotationAngle) {
+		mCamera.save();
+		final Matrix imageMatrix = t.getMatrix();
+		final int imageHeight = child.getLayoutParams().height;
+		final int imageWidth = child.getLayoutParams().width;
+		final int rotation = Math.abs(rotationAngle);
+		
+		float zoomAmount = (float) (/*-140*/-120 + (rotation * 2));
+		if (rotationAngle <= 0) {
+			mCamera.translate(0f, 0f, zoomAmount);
+		} 
+		else {
+			mCamera.translate((float) rotation, 0f, zoomAmount);
+		}
+    
+		mCamera.getMatrix(imageMatrix);
+		imageMatrix.preTranslate(-(imageWidth / 2), -(imageHeight / 2));
+		imageMatrix.postTranslate((imageWidth / 2), (imageHeight / 2));
+		mCamera.restore();
+	}
+    
+    @Override  
+    protected int getChildDrawingOrder(int childCount, int i) {  
+      
+        int mFirstPosition = getFirstVisiblePosition();  
+        int mSelectedPosition = computeHorizontalScrollOffset();  
+        int selectedIndex = mSelectedPosition - mFirstPosition;  
+              
+            // Just to be safe  
+            if (selectedIndex < 0) return i;  
+              
+            if (i == childCount - 1) {  
+                // Draw the selected child last  
+                return selectedIndex;  
+            } else if (i >= selectedIndex) {  
+                // Move the children after the selected child from last to the selected  
+                return (childCount - 1) - (i - selectedIndex);  
+            } else {  
+                // Keep the children before the selected child the same  
+                return i;  
+            }  
+        }   
+}
+
+

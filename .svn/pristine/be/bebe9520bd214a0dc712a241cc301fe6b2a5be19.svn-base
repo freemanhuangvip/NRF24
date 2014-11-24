@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_app_shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/layout_appshop_media"
+        android:layout_width="230dp"
+        android:layout_height="370dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/appshop_media_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/app_shop_text"
+            android:nextFocusLeft="@id/second_setting_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/movie" />
+
+        <TextView
+            android:id="@+id/appshop_media_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="300dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_media"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_appshop_shopping"
+        android:layout_width="224dp"
+        android:layout_height="182dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/appshop_shopping_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/infomation" />
+
+        <TextView
+            android:id="@+id/appshop_shopping_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_shopping"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_appshop_music"
+        android:layout_width="224dp"
+        android:layout_height="182dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginTop="337dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/appshop_music_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/app_shop_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/sport" />
+
+        <TextView
+            android:id="@+id/appshop_music_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_music"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_appshop_life"
+        android:layout_width="454dp"
+        android:layout_height="182dp"
+        android:layout_marginLeft="531dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/appshop_life_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/teleplay" />
+
+        <TextView
+            android:id="@+id/appshop_life_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_life"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_appshop_education"
+        android:layout_width="224dp"
+        android:layout_height="182dp"
+        android:layout_marginLeft="531dp"
+        android:layout_marginTop="337dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/appshop_education_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/app_shop_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/column" />
+
+        <TextView
+            android:id="@+id/appshop_education_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_education"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_appshop_entertainment"
+        android:layout_width="224dp"
+        android:layout_height="182dp"
+        android:layout_marginLeft="761dp"
+        android:layout_marginTop="337dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/appshop_entertainment_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/app_shop_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/entertainment" />
+
+        <TextView
+            android:id="@+id/appshop_entertainment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_entertainment"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_appshop_more"
+        android:layout_width="224dp"
+        android:layout_height="370dp"
+        android:layout_marginLeft="991dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/appshop_more_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/app_shop_text"
+            android:nextFocusRight="@id/wonderful_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/children" />
+
+        <TextView
+            android:id="@+id/appshop_more_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="160dp"
+            android:background="@color/text_background_grey"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/str_more"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

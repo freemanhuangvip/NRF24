@@ -1,0 +1,36 @@
+package com.gotechcn.yanglaolauncher;
+
+import com.gotechcn.gallery3d.GalleryFlow;
+import com.gotechcn.gallery3d.ImageGalleryAdapter;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+
+public class GalleryActivity extends Activity {
+	
+	private final static String TAG="Gallery";
+	
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);     
+		setContentView(R.layout.gallery_3d);
+		Log.d(TAG, "--------isAllAPP = ");
+		/*
+		Integer[] images = { R.drawable.goodvoice, R.drawable.plantapes,
+				R.drawable.ganshidui, R.drawable.lihunlvshi, R.drawable.dangdang};
+				*/
+		Integer[] images = { R.drawable.goodvoice, R.drawable.goodvoice,
+				R.drawable.goodvoice, R.drawable.goodvoice, R.drawable.goodvoice};
+		
+		ImageGalleryAdapter adapter = new ImageGalleryAdapter(this, images);
+		adapter.createReflectedImages();// 创建倒影效果
+		
+		GalleryFlow galleryFlow = (GalleryFlow) this.findViewById(R.id.Gallery01);
+//		galleryFlow.setFadingEdgeLength(0);
+//		galleryFlow.setSpacing(-150); // 图片之间的间距
+		galleryFlow.setAdapter(adapter);
+		galleryFlow.setSelection(2);
+		
+	}
+     
+}

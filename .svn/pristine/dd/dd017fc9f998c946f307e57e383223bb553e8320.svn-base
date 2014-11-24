@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_second_wonderful"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:visibility="gone" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="30dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/layout_second_wonderful_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:baselineAligned="false" >
+
+            <RelativeLayout
+                android:id="@+id/guangchangwu_rela"
+                android:layout_width="@dimen/second_level_rect_width"
+                android:layout_height="@dimen/second_level_rect_height"
+                android:layout_marginTop="150dp" >
+
+                <ImageView
+                    android:id="@+id/guangchangwu_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sky_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/wonderful_text"
+                    android:nextFocusLeft="@id/app_shop_text"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/songcanfuwu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wonderful_movie1_rela"
+                android:layout_width="@dimen/second_level_rect_width"
+                android:layout_height="@dimen/second_level_rect_height"
+                android:layout_marginLeft="@dimen/second_level_rect_gap"
+                android:layout_marginTop="150dp" >
+
+                <ImageView
+                    android:id="@+id/wonderful_movie1_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sky_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/wonderful_text"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/yiliaojiankang" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wonderful_movie2_rela"
+                android:layout_width="@dimen/second_level_rect_width"
+                android:layout_height="@dimen/second_level_rect_height"
+                android:layout_marginLeft="@dimen/second_level_rect_gap"
+                android:layout_marginTop="150dp" >
+
+                <ImageView
+                    android:id="@+id/wonderful_movie2_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sky_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/wonderful_text"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zhoubiangouwu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wonderful_teleplay_rela"
+                android:layout_width="@dimen/second_level_rect_width"
+                android:layout_height="@dimen/second_level_rect_height"
+                android:layout_marginLeft="@dimen/second_level_rect_gap"
+                android:layout_marginTop="150dp" >
+
+                <ImageView
+                    android:id="@+id/wonderful_teleplay_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sky_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/wonderful_text"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/yule" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wonderful_teleplay2_rela"
+                android:layout_width="@dimen/second_level_rect_width"
+                android:layout_height="@dimen/second_level_rect_height"
+                android:layout_marginLeft="@dimen/second_level_rect_gap"
+                android:layout_marginTop="150dp" >
+
+                <ImageView
+                    android:id="@+id/wonderful_teleplay2_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sky_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/wonderful_text"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/minzheng" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wonderful_teleplay3_rela"
+                android:layout_width="@dimen/second_level_rect_width"
+                android:layout_height="@dimen/second_level_rect_height"
+                android:layout_marginLeft="@dimen/second_level_rect_gap"
+                android:layout_marginTop="150dp" >
+
+                <ImageView
+                    android:id="@+id/wonderful_teleplay3_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sky_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/wonderful_text"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/keshitonghua" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wonderful_apk1_rela"
+                android:layout_width="@dimen/second_level_rect_width"
+                android:layout_height="@dimen/second_level_rect_height"
+                android:layout_marginLeft="@dimen/second_level_rect_gap"
+                android:layout_marginTop="150dp" >
+
+                <ImageView
+                    android:id="@+id/wonderful_apk1_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sky_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/wonderful_text"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lvyou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wonderful_apk2_rela"
+                android:layout_width="@dimen/second_level_rect_width"
+                android:layout_height="@dimen/second_level_rect_height"
+                android:layout_marginLeft="@dimen/second_level_rect_gap"
+                android:layout_marginTop="150dp" >
+
+                <ImageView
+                    android:id="@+id/wonderful_apk2_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sky_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/wonderful_text"
+                    android:nextFocusRight="@id/video_on_demand_text"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shenghuofuwu" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

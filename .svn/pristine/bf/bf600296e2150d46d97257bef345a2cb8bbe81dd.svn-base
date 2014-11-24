@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_grey">#ff404040</color>
+    <color name="grass_green">#ff9bbb59</color>
+    <color name="dark_grey">#ff262626</color>
+    <color name="sky_blue">#ff376092</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent_background">#00000000</color>
+    <color name="text_background_grey">#06404040</color>
+
+</resources>
