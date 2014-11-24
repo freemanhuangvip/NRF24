@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_second_wonderful"
+    android:descendantFocusability="afterDescendants"
+    android:visibility="gone" >
+    
+    <RelativeLayout
+        android:id="@+id/layout_galleryFlow"
+        android:layout_width="1228dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="110dp"
+        android:visibility="visible" >
+    
+    <com.gotechcn.gallery3d.GalleryFlow
+        android:id="@+id/Gallery01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+   
+    <ImageView
+        android:id="@+id/layer_top_bg"
+        android:layout_width="600dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="314dp"
+        android:layout_marginTop="34dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/layer_top_bg_nor" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

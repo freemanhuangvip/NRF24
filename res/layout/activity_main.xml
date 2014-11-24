@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rect_gradient_blue" >
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/transparent_background" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/first_level_rect_width"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/wonderful_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2c95de"
+                android:scaleType="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wonderful_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:nextFocusLeft="@+id/app_shop_text"
+                android:text="@string/wonderful"
+                android:textColor="@color/white"
+                android:textSize="@dimen/first_level_menu_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/first_level_rect_width"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/video_on_demand_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2c95de"
+                android:scaleType="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/video_on_demand_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/video_on_demand"
+                android:textColor="@color/white"
+                android:textSize="@dimen/first_level_menu_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/first_level_rect_width"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/civil_for_aged_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2c95de"
+                android:scaleType="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/civil_for_aged_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/civil_for_aged"
+                android:textColor="@color/white"
+                android:textSize="@dimen/first_level_menu_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/first_level_rect_width"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/second_setting_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2c95de"
+                android:scaleType="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/second_setting_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/str_setting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/first_level_menu_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/first_level_rect_width"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/app_shop_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2c95de"
+                android:scaleType="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/app_shop_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:nextFocusRight="@id/wonderful_text"
+                android:text="@string/str_app_shop"
+                android:textColor="@color/white"
+                android:textSize="@dimen/first_level_menu_text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_civil_for_aged" />
+
+    <include layout="@layout/layout_second_wonderful" />
+
+    <include layout="@layout/layout_video_on_demand" />
+
+    <include layout="@layout/layout_second_setting" />
+
+    <include layout="@layout/layout_app_shop" />
+
+</RelativeLayout>
